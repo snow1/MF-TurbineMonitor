@@ -7,7 +7,7 @@ import stylelintPlugin from 'vite-plugin-stylelint'
 import viteImagemin from 'vite-plugin-imagemin'
 
 export default defineConfig({
-  base: './',
+  base: "/MF-TurbineMonitor/",
   build: {
     outDir: './docs',
     rollupOptions: {
@@ -75,5 +75,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 1124,
     open: true,
+    allowedHosts: [
+      "*.trycloudflare.com"
+    ]
   },
 })

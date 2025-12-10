@@ -1,10 +1,10 @@
 <template>
   <div class="layout-footer">
     <div class="item" :style="warningStyle" @click="warningHandle">
-      {{ state.isWarning ? '取消告警' : '设备告警' }}
+      {{ state.isWarning ? 'Cancel Alarm' : 'Alarm' }}
     </div>
     <div class="item" :style="decomposeStyle" @click="decomposeHandle">
-      {{ !state.isDecompose ? '设备拆解' : '设备组装' }}
+      {{ !state.isDecompose ? 'Disassemble' : 'Assemble' }}
     </div>
   </div>
 </template>

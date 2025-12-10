@@ -1,19 +1,19 @@
 <template>
   <Layout :loading="loading">
     <template #left>
-      <WidgetPanel04 title="参数监测" />
-      <WidgetPanel02 title="历史功率" />
-      <WidgetPanel03 title="日发电量监测 " />
+      <WidgetPanel04 title="Parameter Monitoring" />
+      <WidgetPanel02 title="Historical Power" />
+      <WidgetPanel03 title="Daily Generation Monitoring" />
     </template>
     <template #right>
       <WidgetPanel07
         v-show="current"
-        :title="current + '详情'"
+        :title="current + ' Details'"
         :name="current"
       />
-      <WidgetPanel06 v-show="!current" title="运行监测" />
-      <WidgetPanel01 title="故障对比" />
-      <WidgetPanel05 title="偏航角度监测" />
+      <WidgetPanel06 v-show="!current" title="Operation Monitoring" />
+      <WidgetPanel01 title="Fault Comparison" />
+      <WidgetPanel05 title="Yaw Angle Monitoring" />
     </template>
     <template #middle>
       <div style="width: 100%; height: 100%" ref="container"></div>

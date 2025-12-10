@@ -37,3 +37,9 @@
 
 - [x] 风机零部件的状态绑定
 - [x] 风机偏航角数据绑定
+del yarn.lock
+npm cache clean --force
+npm install
+npm run dev
+
+cloudflared tunnel --url http://127.0.0.1:1124

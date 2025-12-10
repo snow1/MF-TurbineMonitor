@@ -5,7 +5,7 @@
   >
     <div class="loading-gif"></div>
     <div class="loading-tip">
-      模型正在加载中 ({{ loading.loaded }}/{{ loading.total }}) ...
+      Loading Models ({{ loading.loaded }}/{{ loading.total }}) ...
     </div>
   </div>
 </template>

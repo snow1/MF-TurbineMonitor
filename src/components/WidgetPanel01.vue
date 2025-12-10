@@ -46,7 +46,7 @@ const generateOptions = () => {
         color: '#fff',
         margin: 10,
       },
-      data: ['08月', '09月', '10月', '11月', '12月'],
+      data: ['08', '09', '10', '11', '12'],
     },
     yAxis: {
       type: 'value',

@@ -10,7 +10,7 @@
           <div class="item-circle"></div>
           <div class="item-name">{{ name }}</div>
           <div class="item-angle">{{ angle }}</div>
-          <div class="item-type">{{ status ? '正常' : '异常' }}</div>
+          <div class="item-type">{{ status ? 'Normal' : 'Abnormal' }}</div>
           <div class="item-time">{{ time }}</div>
         </div>
       </div>
@@ -22,14 +22,14 @@ import { LayoutPanel } from '@/layout'
 import { ref, onMounted } from 'vue'
 import { Random } from 'mockjs'
 
-const directions = ['东', '东北', '北', '西北', '西', '西南', '南', '东南']
+const directions = ['East', 'Northeast', 'North', 'Northwest', 'West', 'Southwest', 'South', 'Southeast']
 
 const list = ref<any[]>(
   directions.map(() => {
     const angle = Random.integer(0, 360)
     return {
-      name: `向${Random.pick(directions)}偏航`,
-      angle: `${angle}度`,
+      name: `Yaw to ${Random.pick(directions)}`,
+      angle: `${angle}°`,
       status: angle < 180 ? 1 : 0,
       time: Random.date('MM/dd HH:mm:ss'),
     }

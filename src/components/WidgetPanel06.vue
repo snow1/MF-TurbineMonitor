@@ -9,7 +9,7 @@
         >
           <div class="item-circle"></div>
           <div class="item-name">{{ name }}</div>
-          <div class="item-type">{{ status ? '正常' : '部件异常' }}</div>
+          <div class="item-type">{{ status ? 'Normal' : 'Abnormal' }}</div>
           <div class="item-time">{{ time }}</div>
         </div>
       </div>
@@ -22,15 +22,15 @@ import { ref, onMounted } from 'vue'
 import { Random } from 'mockjs'
 
 const equipments = [
-  '发动机',
-  '叶片',
-  '轮毂',
-  '主轴',
-  '发电机',
-  '塔架',
-  '变流器',
-  '变桨系统',
-  '齿轮箱',
+  'Engine',
+  'Blade',
+  'Hub',
+  'Main Shaft',
+  'Generator',
+  'Tower',
+  'Converter',
+  'Pitch System',
+  'Gearbox',
 ]
 
 const list = ref<any[]>(

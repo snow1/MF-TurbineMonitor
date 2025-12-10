@@ -1,14 +1,14 @@
 <template>
   <div class="layout-header">
     <div class="header-midden">
-      <div class="cn">大型风力发电机监控平台</div>
-      <div class="en">Large Wind Turbine Monitoring Platform</div>
+      <!-- Large Wind Turbine Monitoring Platform -->
+      <div>Large Wind Turbine Monitoring Platform</div>
     </div>
     <div class="header-left">
       <i class="fa-regular fa-envelope"></i>
       <div
         class="message"
-        content="【系统通知】感谢大家对我们项目的关注与支持!希望能为我们的项目点一个Star,您的支持对我们来说至关重要。"
+        content="Thanks"
       ></div>
     </div>
     <div class="header-right">
